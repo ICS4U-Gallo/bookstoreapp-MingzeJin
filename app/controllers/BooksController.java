@@ -24,7 +24,20 @@ public class BooksController extends Controller{
         return TODO;
     }
 
-    public Result edit(int ID) {
+    public Result edit(int id) {
+        return TODO;
+    }
+
+    public Result update() {
+        return TODO;
+    }
+
+    public Result destroy(int id) {
+        return TODO;
+    }
+
+    // for book details
+    public Result show(int id) {
         return TODO;
     }
 }
