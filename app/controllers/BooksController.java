@@ -24,7 +24,7 @@ public class BooksController extends Controller{
         return TODO;
     }
 
-    public Result edit(int id) {
+    public Result edit(Integer id) {
         return TODO;
     }
 
@@ -32,12 +32,12 @@ public class BooksController extends Controller{
         return TODO;
     }
 
-    public Result destroy(int id) {
+    public Result destroy(Integer id) {
         return TODO;
     }
 
     // for book details
-    public Result show(int id) {
+    public Result show(Integer id) {
         return TODO;
     }
 }
