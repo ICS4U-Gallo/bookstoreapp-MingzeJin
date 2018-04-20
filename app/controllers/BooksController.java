@@ -7,11 +7,14 @@ import play.mvc.Result;
  * Created by Mingze Jin on 4/16/2018
  */
 
+import view.html.books.*;
+
 public class BooksController extends Controller{
 
     // for all books
     public Result index() {
-        return TODO;
+        Set<Book> books = Book.allBooks();
+        return ok(index.render(books));
     }
 
     // to create book
