@@ -8,8 +8,8 @@
 
         <h1>All Books</h1>
 
-        @fie(books <- books) {
-            <a href="#">@book.title</a>
+        @for(books <- books) {
+            <a href="#">@routes.BooksController.show(book.id)">@book.title</a>
             <p>Price : @book.price</p>
             <p>Author : @book.author</p>
         }
