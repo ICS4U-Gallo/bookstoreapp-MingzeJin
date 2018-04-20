@@ -1,5 +1,6 @@
 package controllers;
 
+import models.Book;
 import play.data.FormFactory;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -39,7 +40,12 @@ public class BooksController extends Controller{
     }
 
     public Result edit(Integer id) {
-        return TODO;
+        Book book = Book.findById(id);
+        if(book == null) {
+            return notFound("Book Not Found");
+        }
+        Form<Book> bookForm = formFactory.form(Book.class).fill(book);
+        return ok(edit.render(bookForm));
     }
 
     public Result update() {
